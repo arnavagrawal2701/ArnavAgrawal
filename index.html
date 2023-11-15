@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/284221ed8d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+                <img src="LogoME1.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br><span>Arnav Agrawal</span></h1>
+                <h3>Machine Learning Engineer</h3>
+                
+            </div>
+        </div> 
+        <!-- <img src="IMG20230719121252-removebg-preview.png" alt="" id="bgimg">    -->
+    </div>
+    <div id="about">
+        <div class="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="2nd.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="intro">
+                        Hi, I'm <span>Arnav</span>!!
+                        <br>I like to dive into the intricacies of the world of <span>Data Science</span> and <span>Computer Vision</span> to empower computers with the ability to learn. I have created several projects in the field of <span>Artificial Intelligence</span> and <span>Machine Learning</span>.
+                        <br>I also interest myself with projects of <span>Embedded Systems</span>. Working with microcontrollers like <span>ESP32</span>, <span>Arduino Uno</span> and <span>Raspberry Pi 4B</span> helps me bring imaginations to life by integrating code and hardware into one.
+                        <br>Projects that puzzle me are the ones that entertain me. I am passionate to contribute to the ever-evolving field of technology.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links "onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links "onclick="opentab('education')">Education</p>
+                        <p class="tab-links "onclick="opentab('certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Experienced with building models and manipulating data to various project needs.</li>
+                            <li><span>Computer Vision</span><br>Equipped with the skills to develop deep learning models that work with image data.</li>
+                            <li><span>Embedded Systems</span><br>Worked on projects involving programming microcontrollers for real-time applications, utilizing platforms such as Arduino, Raspberry Pi, and ESP8266.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Artificial Intelligence Intern - Skill Vertex</span><br>December 2022 - January 2023<br>This internship was really instrumental for me to develop my skills in machine learning and artificial intelligence. It helped me learn and understand the intrcacies of the industry.</li>
+                            <li><span>Programmer - Robocon</span><br>October 2023 - Present<br>This club has helped me gain knowledge and dive deep into the world of embedded programming.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>B.Tech CSE w/s AIML</span><br>S.R.M Institute of Science and Technology<br>September 2022 - June 2026</li>
+                            <li><span>12th CBSE</span><br>Mayo International School<br>May 2022</li>
+                            <li><span>10th CBSE</span><br>Amity International School<br>May 2020</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            
+                            <li><span>Advanced Learning Algorithms</span><br>Coursera<br>July 2023<br><a href="https://www.coursera.org/account/accomplishments/verify/94PKM7M7EBXX" target="_blank">Show Credential</a></li>
+                            <li><span>Applications of Machine Learning in Urban Studies</span><br>IIRS, ISRO<br>June 2023<br><a href="https://certificate.iirs.gov.in/" target="_blank">Show Credential</a></li>
+                            <li><span>Artificial Intelligence Training</span><br>Skill Vertex<br>Dec 2022<br>Credential ID: RA226186</li>
+                            <li><span>Supervides Machine Learning: Regression and Classification</span><br>Coursera<br>Dec 2022<br><a href="https://www.coursera.org/account/accomplishments/verify/AKRLKFWYCEQG" target="_blank">Show Credential</a></li>
+                            <li><span>Building Transformer-Based Natural Language Processing Applications</span><br>NVIDIA<br>Nov 2022<br><a href="https://courses.nvidia.com/certificates/c982676ef9a74f228dd715745afb48eb/" target="_blank">Show Credential</a></li>
+                            <li><span>Fundamentals of Deep Learning</span><br>NVIDIA<br>Nov 2022<br><a href="https://courses.nvidia.com/certificates/475db7ea809849a3b84983b00ecd9bcc/" target="_blank">Show Credential</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-fade"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I can create and deploy custom machine learning models, tailoring solutions to unique client needs and extracting insights from diverse datasets, redefining possibilities in artificial intelligence.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera fa-fade"></i>
+                    <h2>Computer Vision</h2>
+                    <p>I can create computer vision based systems, deployed for puproses like quality monitoring and security checks.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip fa-fade"></i>
+                    <h2>Embedded Systems</h2>
+                    <p>I can work with programming embedded systems projects to aim develop products tailor made to client needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>arnavagrawal2701@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 98716 32168</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arnavagrawal2701/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/arnavagrawal2701" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="MyResume.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©Arnav Agrawal</p>
+        </div>
+    </div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script> 
+
+
+
+
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>  
+    
+</body>
+</html>
