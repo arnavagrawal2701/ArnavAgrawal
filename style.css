@@ -54,7 +54,6 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    
 
 }
 nav ul li a::after{
@@ -66,9 +65,10 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    border-radius: 2px;
 }
 nav ul li a:hover::after{
-    width: 100%;
+    width: 50%;
 }
 
 .container{
@@ -107,13 +107,10 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    /* margin-top: 10%; */
-    font-size: 30px;
     float: right;
     flex-basis: 80%;
 }
 .header-text h3{
-    font-family:'Times New Roman', Times, serif;
     font-size: 2vw;
     text-align: left;
 }
@@ -143,9 +140,15 @@ nav ul li a:hover::after{
     flex-basis: 50%;
 }
 .subtitle{
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: 600;
     color: #fff;
+}
+.intro{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 10%;
+    font-size: 1.5vw;
 }
 .intro span{
     color: #66fcf1;
@@ -169,22 +172,26 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: -8px;
-    transform: 0.5s;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+.tab-links:hover::after{
+    width: 50%;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 .tab-contents ul li{
     list-style: none;
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 1.5vw;
 
 }
 .tab-contents ul li a{
     text-decoration: underline;
     list-style: none;
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 1.2vw;
     color: #ababab;
 
 }
@@ -223,20 +230,26 @@ nav ul li a:hover::after{
 
 }
 .services-list div h2{
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+.services-list div span{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+/* .services-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-}
+} */
 .services-list div:hover{
     background: #66fcf1;
     transform: translateY(-10px);
+    color: #2c2c2c;
 }
 
 
