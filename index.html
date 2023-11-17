@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio website</title>
+    <title>Arnav Agrawal</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/284221ed8d.js" crossorigin="anonymous"></script>
-
+    <style>
+        .left-align{
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-    
-    <div id="header">
-        
+   
+    <nav class="visible-md">
+        <img src="LogoME1.png" alt="" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="header"> 
         <div class="container">
-            <nav>
-                <img src="LogoME1.png" alt="" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <!-- <li><a href="#">Portfolio</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <br><span>Arnav Agrawal</span></h1>
-                <h3>Machine Learning Engineer</h3>
-                
+            <div class = "header-content">
+                <div class="header-img" align="center">
+                    <img src="1st2.png">
+                </div>
+                <div class="shape visible-md"></div>
+                <div class="header-text">
+                    <h1>Hi, I'm <br><span>Arnav Agrawal</span></h1>
+                    <h3>Machine Learning Engineer</h3>
+                </div>
             </div>
         </div> 
-        <!-- <img src="IMG20230719121252-removebg-preview.png" alt="" id="bgimg">    -->
     </div>
     <div id="about">
         <div class="parallax">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="2nd.png" alt="">
+                    <br>
+                    <h1 align="left" class="subtitle">About Me<br></h1>
+                    <p align="left" class="intro">
+                        <br>
+                        Hi, I'm <span>Arnav</span>!!
+                        <br><br>I like to dive into the intricacies of the world of <span>Data Science</span> and <span>Computer Vision</span> to empower computers with the ability to learn. I have created several projects in the field of <span>Artificial Intelligence</span> and <span>Machine Learning</span>.
+                        <br><br>I also interest myself with projects of <span>Embedded Systems</span>. Working with microcontrollers like <span>ESP32</span>, <span>Arduino Uno</span> and <span>Raspberry Pi 4B</span> helps me bring imaginations to life by integrating code and hardware into one.
+                        <br><br>Projects that puzzle me are the ones that entertain me. I am passionate to contribute to the ever-evolving field of technology.
+                    </p>
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p class="intro">
-                        Hi, I'm <span>Arnav</span>!!
-                        <br>I like to dive into the intricacies of the world of <span>Data Science</span> and <span>Computer Vision</span> to empower computers with the ability to learn. I have created several projects in the field of <span>Artificial Intelligence</span> and <span>Machine Learning</span>.
-                        <br>I also interest myself with projects of <span>Embedded Systems</span>. Working with microcontrollers like <span>ESP32</span>, <span>Arduino Uno</span> and <span>Raspberry Pi 4B</span> helps me bring imaginations to life by integrating code and hardware into one.
-                        <br>Projects that puzzle me are the ones that entertain me. I am passionate to contribute to the ever-evolving field of technology.
-                    </p>
+                    <br>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links "onclick="opentab('experience')">Experience</p>
@@ -103,17 +112,17 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code fa-fade"></i>
+                    <i class="fa-solid fa-code"></i>
                     <h2>Machine Learning</h2>
                     <p>I can create and deploy custom machine learning models, tailoring solutions to unique client needs and extracting insights from diverse datasets, redefining possibilities in artificial intelligence.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-camera fa-fade"></i>
+                    <i class="fa-solid fa-camera"></i>
                     <h2>Computer Vision</h2>
                     <p>I can create computer vision based systems, deployed for puproses like quality monitoring and security checks.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-microchip fa-fade"></i>
+                    <i class="fa-solid fa-microchip"></i>
                     <h2>Embedded Systems</h2>
                     <p>I can work with programming embedded systems projects to aim develop products tailor made to client needs.</p>
                 </div>
